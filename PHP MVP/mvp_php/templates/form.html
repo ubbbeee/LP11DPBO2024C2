@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.php">WIW</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-6 m-auto mt-4 mb-4">
+          <form method="post">
+            <div class="card rounded-lg border border-secondary">
+              <div class="card-header bg-dark">
+                <h3 class="text-white text-center">DATA_LABEL_FORM</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group mb-3">
+                  <label for="nik" class="fw-bold"
+                    >Nomor Induk Kependudukan:</label
+                  >
+                  <input
+                    type="text"
+                    name="nik"
+                    class="form-control"
+                    id="nik"
+                    placeholder="Masukkan NIK"
+                    value="DATA_NIK"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="nama" class="fw-bold">Nama:</label>
+                  <input
+                    type="text"
+                    name="nama"
+                    class="form-control"
+                    id="nama"
+                    placeholder="Masukkan Nama"
+                    value="DATA_NAMA"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="tempat" class="fw-bold">Tempat:</label>
+                  <input
+                    type="text"
+                    name="tempat"
+                    class="form-control"
+                    id="tempat"
+                    placeholder="Masukkan Tempat"
+                    value="DATA_TEMPAT"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="tl" class="fw-bold">Tanggal Lahir:</label>
+                  <input
+                    type="date"
+                    name="tl"
+                    class="form-control"
+                    id="tl"
+                    value="DATA_TL"
+                  />
+                </div>
+                <label for="gender">Jenis Kelamin</label>
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="inlineRadio1"
+                      value="Laki-laki"
+                      DATA_LAKI
+                    />
+                    <label class="form-check-label" for="gender"
+                      >Laki-laki</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="inlineRadio2"
+                      value="Perempuan"
+                      DATA_PEREMPUAN
+                    />
+                    <label class="form-check-label" for="gender"
+                      >Perempuan</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="email" class="fw-bold">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Masukkan Email"
+                    value="DATA_EMAIL"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="telp" class="fw-bold">Telepon:</label>
+                  <input
+                    type="text"
+                    name="telp"
+                    class="form-control"
+                    id="telp"
+                    placeholder="Masukkan Nomor Telepon"
+                    value="DATA_TELP"
+                  />
+                </div>
+              </div>
+              <div class="card-footer bg-dark">
+                <button class="btn btn-primary" type="submit" name="submit">
+                  Simpan
+                </button>
+                <a href="index.php" class="btn btn-danger">Batal</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
